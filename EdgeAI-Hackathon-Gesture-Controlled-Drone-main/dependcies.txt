@@ -1,0 +1,16 @@
+# Ask Gursimran/Micky for their Docker image
+# Should be something like:
+docker pull <their-image>
+docker run -it -p 5760:5760 <image-name>
+
+# Test connection with pymavlink
+
+# On the Jetson Orin NX
+# Install dependencies
+sudo apt-get update
+sudo apt-get install python3-pip gstreamer1.0-tools
+
+pip3 install opencv-python numpy
+
+# On Jetson
+pip3 install torch torchvision ultralytics
