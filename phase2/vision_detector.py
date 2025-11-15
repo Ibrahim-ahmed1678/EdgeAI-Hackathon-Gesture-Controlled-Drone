@@ -82,3 +82,5 @@ class DroneVision:
 if __name__ == "__main__":
     vision = DroneVision()
     vision.run()
+
+    print("Target Detected:", vision.target_detected)
